@@ -52,7 +52,7 @@ img{
 
 nav a:hover, a:active {
   color: #eaeaea82;
-  font-size: 150%;
+  font-size: 90%;
   }
 
   /* End of Navigation Bar */
@@ -64,7 +64,7 @@ body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 
-    background-image: url("/images/background.svg");
+    background-image: url("/images/background.png");
     background-color: #cccccc;
     height: 500px;
     background-position: center;
