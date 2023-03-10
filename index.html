@@ -7,31 +7,61 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Home</title>
   </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img src="images/awesome-logo.svg" alt="An awesome logo" />
-      </div>
-      <ul class="menu">
-        <li class="dropdown">
-          <span>Features &#9662;</span>
-          <ul class="features-menu">
-            <li><a href="#"></a>Harder</li>
-            <li><a href="#"></a>Better</li>
-            <li><a href="#"></a>Faster</li>
-            <li><a href="#"></a>Stronger</li>
+    <body>
+      <header>
+        <img src="images/logo2.png" alt="">
+        <nav class="menu-bar">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact-me.html">Contact</a></li>
           </ul>
-        </li>
-        <li>
-          <a href="#">Blog</a>
-        </li>
-        <li>
-          <a href="#">Subscribe</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-      </ul>
-    </header>
-  </body>
+        </nav>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>About Me</h2>
+          <p>Hi, Ellen Mae Nerosa here, a web developer with a passion for crafting exceptional online experiences. Graduated with a 4-year Bachelor of Science degree in Information Technology, I have a strong foundation in web and software development.
+
+            With an insatiable curiosity for all things web development, I had embarked on a journey to master the intricacies of HTML and CSS. By enhancing these skills, I am determined to gain a deeper understanding of the underlying technologies that power modern web applications.
+            
+            With a keen eye for detail and a relentless pursuit of excellence, I am committed to delivering elegant, intuitive, and engaging web solutions that exceed expectations. Whether it's building a stunning portfolio site, creating an e-commerce platform, or designing a custom web application, I have the expertise to bring your project to life.
+            
+            So if you're looking for a skilled web developer who is dedicated to delivering exceptional results, look no further than me. </p>
+
+        </section>
+        <section id="services">
+          <h2>Services</h2>
+          <ul>
+            <li>Web Design</li>
+            <li>Graphic Design</li>
+            <li>Photography</li>
+          </ul>
+        </section>
+        <section id="portfolio">
+          <h2>Portfolio</h2>
+          <ul>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </section>
+
+        <section id="contact">
+          <h2>Contact</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="email">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+            <input type="submit" value="Send Message">
+          </form>
+        </section>
+      </main>
+      <footer>
+        <p>Copyright &copy; Mae Nerosa</p>
+      </footer>
+    </body>
 </html>
