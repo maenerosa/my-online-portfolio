@@ -8,7 +8,7 @@
 /* Main Body */
 .main{
 
- background-color: #0c0c0ce4;
+ background-color: #0c0c0c;
  width: 100%;
  background-position: center;
  background-size: cover;
@@ -122,19 +122,8 @@ ul li a:hover{
  width: 30%;
  height: 90%;
  position: absolute;
- right: 100px;
+ right: 80px;
  bottom: 0;
-
-}
-
-image .me{
-
- position: absolute;
- height: 160%;
- left: 70%;
- transform: translate(-55%);
- bottom: 0;
- transition: left 2s ease;
 
 }
 
