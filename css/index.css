@@ -5,8 +5,10 @@
  box-sizing: border-box;
 }
 
+/* Main Body */
 .main{
- background-color: #000;
+
+ background-color: #0c0c0ce4;
  width: 100%;
  background-position: center;
  background-size: cover;
@@ -17,6 +19,7 @@
 
 }
 
+/* Navigation Bar */
 .navbar{
 
  width: 86%;
@@ -31,13 +34,12 @@
 
  width: 160px;
  cursor: pointer;
- margin-top: -3%;
+ margin-top: -2%;
  margin-left: -2%;
 
 }
 
 ul{
-
  margin-top: -4%;
 }
 
@@ -48,7 +50,7 @@ ul li{
  padding: 10px 16px;
 }
 
-ul li a {
+ul li a{
 
  font-size: 16px;
  font-weight: bold;
@@ -63,6 +65,10 @@ ul li a:hover{
  color: #9c5b00ca;
 }
 
+/* End of Navigation Bar */
+
+
+/* Information */
 .info{
 
  color: #ffff;
@@ -106,27 +112,30 @@ ul li a:hover{
  background: #ff9f1899;
 }
 
-.image{
+/* End of Information */
+
+
+/* Start of Image */
+
+.me{
 
  width: 30%;
- height: 60%;
+ height: 90%;
  position: absolute;
  right: 100px;
  bottom: 0;
 
 }
 
-.image img{
+image .me{
 
  position: absolute;
- height: 140%;
- left: 40%;
+ height: 160%;
+ left: 70%;
  transform: translate(-55%);
  bottom: 0;
  transition: left 2s ease;
 
 }
 
-.image:hover .girl{
- left: 55%;
-}
+/* End of Image */
