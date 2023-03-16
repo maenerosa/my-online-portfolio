@@ -8,11 +8,12 @@
 /* Main Body */
 .main{
 
- background-color: #000000;
+ background-color: #ffffff;
  width: 100%;
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
+
  height: 100vh;
  position: relative;
  font-family: sans-serif;
@@ -22,10 +23,11 @@
 /* Navigation Bar */
 .navbar{
 
- width: 86%;
- margin: auto;
+ background-color: #77005f;
+
+ width: 100%;
  display: flex;
- padding: 15px 0;
+
  align-items: center;
  justify-content: space-between;
 }
@@ -33,36 +35,31 @@
 .navbar .logo{
 
  width: 160px;
+ padding: 10px 30px;
  cursor: pointer;
- margin-top: -2%;
- margin-left: -2%;
 
-}
-
-ul{
- margin-top: -4%;
 }
 
 ul li{
 
  list-style: none;
  display: inline-block;
- padding: 10px 16px;
+ padding: 0 20px;
+ margin-right: 20px;
 }
 
 ul li a{
 
- font-size: 16px;
- font-weight: bold;
+ font-size: 15px;
+ font-weight: bolder;
  text-decoration: none;
- color:grey;
- margin-top: -3%;
+ color:rgb(255, 255, 255);
  transition: .4 ease;
 }
 
 ul li a:hover{
 
- color: #9c5b00ca;
+ color: #929292;
 }
 
 /* End of Navigation Bar */
@@ -71,15 +68,15 @@ ul li a:hover{
 /* Information */
 .info{
 
- color: #ffff;
+ color: #000000;
  margin-left: 7%;
- margin-top: 6%;
+ margin-top: 15%;
 }
 
 .info h1{
 
  font-size: 60px;
- color: #ffff;
+ color: #000000;
 }
 
 .info h3{
@@ -91,7 +88,7 @@ ul li a:hover{
 
 .info span{
 
- color: #d4b283ff;
+ color:  #77005f;
 }
 
 .info a{
@@ -99,7 +96,8 @@ ul li a:hover{
  text-decoration: none;
  color: #ffff;
  font-weight: bold;
- background-color: #d4b283ff;
+ 
+ background-color: rgb(0, 0, 0);
  padding: 10px 18px;
  margin: 26px 0;
  border-radius: 10px;
@@ -109,7 +107,7 @@ ul li a:hover{
 }
 
 .info a:hover{
- background: #ff9f1899;
+ background:   #77005f;
 }
 
 /* End of Information */
@@ -117,14 +115,27 @@ ul li a:hover{
 
 /* Start of Image */
 
-.me{
+.image{
 
- width: 30%;
- height: 90%;
- position: absolute;
- right: 80px;
+ width: 40%;
+ position: absolute; 
  bottom: 0;
-
+ right: 200px;
 }
 
-/* End of Image */
+.image{
+
+ height: 65%;
+ position: absolute;
+ left: 70%;
+ bottom: 0;
+ transform: translate(-25%);
+ transition: bottom 1s, left 1s;
+ 
+}
+
+.image{
+
+ border-radius: 100%;
+ border: 1px solid #00000000
+}
