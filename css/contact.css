@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Contact Section */
+
+.contact {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+h6 {
+  font-size: 2.5em;
+}
+
+.contact-details {
+  text-align: center;
+  font-size: 1.1em;
+}

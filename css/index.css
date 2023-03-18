@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Main Body */
 .main {
   background-color: #ffffff;
@@ -108,7 +112,7 @@ ul li a:hover {
   position: relative;
 }
 
-/* Desktop Devices */
+/* Mobile and Desktop Devices */
 @media screen and (min-width: 961px) {
   .image {
     display: block;
@@ -121,4 +125,39 @@ ul li a:hover {
   .info {
     flex-direction: row;
   }
+
+  .skills {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2em;
+  }
+
+  .skill {
+    align-items: start;
+  }
+
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+  }
 }
+
+/* Tablets Devices */
+
+@media screen and (min-width: 601px) and (max-width: 960px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+  }
+
+  .skill {
+    align-items: start;
+  }
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
+
+/* Footer */
