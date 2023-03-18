@@ -43,18 +43,19 @@ ul li {
   display: inline-block;
   padding: 0 20px;
   margin-right: 20px;
+  opacity: 0.5;
 }
 
 ul li a {
   font-size: 15px;
   font-weight: bolder;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: 0.4 ease;
 }
 
 ul li a:hover {
-  color: #929292;
+  color: #ffffff;
 }
 
 /* End of Navigation Bar */
@@ -112,6 +113,10 @@ ul li a:hover {
   position: relative;
 }
 
+.img-container img {
+  opacity: 0.9;
+}
+
 /* Mobile and Desktop Devices */
 @media screen and (min-width: 961px) {
   .image {
@@ -159,5 +164,3 @@ ul li a:hover {
     gap: 2em;
   }
 }
-
-/* Footer */
