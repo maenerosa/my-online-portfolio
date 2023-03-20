@@ -115,7 +115,6 @@ ul li a:hover {
 
 .img-container img {
   width: 100%;
-  opacity: 0.9;
 }
 
 /* Mobile and Desktop Devices */
@@ -149,20 +148,6 @@ ul li a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
-  }
-
-  /* About Me*/
-
-  .about-me-img {
-    display: block;
-  }
-
-  .about-me {
-    order: 0;
-  }
-
-  .about {
-    flex-direction: row;
   }
 }
 
