@@ -114,11 +114,13 @@ ul li a:hover {
 }
 
 .img-container img {
+  width: 100%;
   opacity: 0.9;
 }
 
 /* Mobile and Desktop Devices */
 @media screen and (min-width: 961px) {
+  /* Header */
   .image {
     display: block;
   }
@@ -131,6 +133,8 @@ ul li a:hover {
     flex-direction: row;
   }
 
+  /* Skills */
+
   .skills {
     grid-template-columns: repeat(3, 1fr);
     padding: 2em;
@@ -140,10 +144,25 @@ ul li a:hover {
     align-items: start;
   }
 
+  /* Projects */
   .projects-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2em;
+  }
+
+  /* About Me*/
+
+  .about-me-img {
+    display: block;
+  }
+
+  .about-me {
+    order: 0;
+  }
+
+  .about {
+    flex-direction: row;
   }
 }
 
