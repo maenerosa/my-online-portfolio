@@ -101,14 +101,13 @@
   text-align: center;
   color: #fff;
 }
-.about-right h1 {
-  font-size: 5rem;
-  text-transform: uppercase;
-}
-.about-right h1 span {
-  color: #77005f;
-}
 .about-right h2 {
+  font-size: 2rem;
+}
+.about-right h2 span {
+  color: #fb00c9;
+}
+.about-right h3 {
   font-weight: 600;
 }
 .about-btns {
@@ -129,21 +128,21 @@
   cursor: pointer;
   color: #fff;
 }
-.btn.btn-pink {
+.btn.btn-resume {
   background: #77005f;
   color: #fff;
   border-color: #77005f;
   transition: all 0.5s ease-in-out;
 }
-.btn.btn-pink:hover {
+.btn.btn-resume:hover {
   background: transparent;
   border-color: #fff;
   color: #fff;
 }
-.btn.btn-white {
+.btn.btn-github {
   transition: all 0.5s ease-in-out;
 }
-.btn.btn-white:hover {
+.btn.btn-github:hover {
   background: #77005f;
   border-color: #77005f;
   color: #fff;
