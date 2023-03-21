@@ -56,7 +56,7 @@
   margin: 2.2rem 0 0.6rem 0;
   line-height: 1.2;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #77005f;
+  border-bottom: 2px solid #ff84f5;
 }
 .about-left-content h3 {
   text-transform: uppercase;
@@ -148,7 +148,7 @@
   border-color: #77005f;
   color: #fff;
 }
-.about-para p {
+.about-me p {
   font-weight: 300;
   padding: 0.5rem;
   opacity: 0.8;
@@ -167,15 +167,4 @@
     position: absolute;
     width: 80%;
   }
-}
-.credit {
-  text-align: center;
-  color: #fff;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-.credit a {
-  text-decoration: none;
-  color: #ff00cc;
-  font-weight: bold;
 }
