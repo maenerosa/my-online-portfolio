@@ -115,28 +115,7 @@ ul li a:hover {
 
 .img-container img {
   width: 100%;
-}
-
-.btn.btn-animationproject {
-  background: #86006b;
-  color: #ffffff;
-  transition: all 0.5s ease-in-out;
-}
-.btn.btn-animationproject:hover {
-  background: transparent;
-  border-color: #000000;
-  color: #030303;
-}
-
-.btn.btn-animationcode {
-  background: #86006b;
-  color: #ffffff;
-  transition: all 0.5s ease-in-out;
-}
-.btn.btn-animationcode:hover {
-  background: transparent;
-  border-color: #000000;
-  color: #030303;
+  opacity: 0.9;
 }
 
 /* Mobile and Desktop Devices */
