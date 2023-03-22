@@ -23,17 +23,27 @@
     <title>About</title>
   </head>
   <body>
-    <header class="main">
-      <nav class="navbar">
-        <img src="images/mylogo.png" class="logo" />
+    <header>
 
-        <ul>
+      <!-- Navigation Bar Section -->
+      <nav>
+        <ul class="navbar">
+          <img src="images/mylogo.png" class="logo" />
+          <input type="checkbox" id="check">
+          <span class="menu"> 
           <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-          <li><a href="#">RESUME</a></li>
+             <li><a href="#">PROJECTS</a></li>
+             <li><a href="#">CONTACT</a></li>
+             <li><a href="#">RESUME</a></li>
+            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+          </span>  
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
         </ul>
       </nav>
+      
+    </header>
+
+    <!-- Introduction Section -->
 
       <section class="info">
         <div class="info-contents">
@@ -61,13 +71,9 @@
           />
         </div>
       </section>
-      <hr />
-      <section class="skills">
-        <div class="skill">
-          <h3>Communications</h3>
-          <p>English</p>
-        </div>
 
+      <!-- Skills Section -->
+      <section class="skills">
         <div class="skill">
           <h3>HTML</h3>
           <p>1 year</p>
@@ -79,83 +85,81 @@
         </div>
       </section>
 
+      <!-- Projects Section -->
+
       <section class="projects">
+        <div class="projects-container">
         <div class="projects-header">
-          <h4>Projects</h4>
-          <a href="#">Contact me</a>
+        <h1 class="project-title">RECENT<span> PROJECTS</span></h1>
+        </div>
+          <div class="all-projects">
+            
+            <div class="project-item">
+            <div class="project-info">
+            <h2>Project 1 - Text Animation</h2>
+            <p>HTML</p> <p>CSS</p>
+            <p>An animation text is a visually dynamic form of text 
+              that moves or changes in a creative and interesting way.</p>
+              <br>
+              </div>
+          <div class="project-image">
+            <img src="images/project1.png" alt="An Animation" />
+          </div>
+          <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
+          <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
+        </div>
+        
+
+        <div class="project-item">
+          <div class="project-info">
+        <h2>Project 1 - Text Animation</h2>
+        <p>HTML</p> <p>CSS</p>
+        <p>An animation text is a visually dynamic form of text 
+          that moves or changes in a creative and interesting way.</p>
+          <br>
+          </div>
+      <div class="project-image">
+        <img src="images/project1.png" alt="An Animation" />
+      </div>
+      <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
+      <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
+    </div>
+
+
+    <div class="project-item">
+      <div class="project-info">
+    <h2>Project 1 - Text Animation</h2>
+    <p>HTML</p> <p>CSS</p>
+    <p>An animation text is a visually dynamic form of text 
+      that moves or changes in a creative and interesting way.</p>
+      <br>
+      </div>
+  <div class="project-image">
+    <img src="images/project1.png" alt="An Animation" />
+  </div>
+  <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
+  <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
+</div>
+
+<div class="project-item">
+  <div class="project-info">
+<h2>Project 1 - Text Animation</h2>
+<p>HTML</p> <p>CSS</p>
+<p>An animation text is a visually dynamic form of text 
+  that moves or changes in a creative and interesting way.</p>
+  <br>
+  </div>
+<div class="project-image">
+<img src="images/project1.png" alt="An Animation" />
+</div>
+<button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
+<button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
+</div>
+
+        </div>
         </div>
 
-        <div class="projects-container">
-          <div class="project">
-            <div class="project-img-container">
-              <img src="images/project1.png" alt="An Animation" />
-            </div>
-    
-            <h5>Project 1 - Text Animation</h5>
-
-            <div class="project-tech">
-              <p>HTML</p>
-              <p>CSS</p>
-            </div>
-            <div class="project-links">
-              <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-              <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-            </div>
-          </div>
-
-            <div class="project">
-              <div class="project-img-container">
-                <img src="images/project1.png" alt="An Animation" />
-              </div>
-
-              <h5>Project 2</h5>
-  
-              <div class="project-tech">
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
-
-              <div class="project-links">
-                <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-                <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-              </div>
-            </div>
-
-
-              <div class="project">
-                <div class="project-img-container">
-                  <img src="images/project1.png" alt="An Animation" />
-                </div>
-
-                <h5>Project 3</h5>
-
-                <div class="project-tech">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                </div>
-
-                <div class="project-links">
-                  <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-                  <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-                </div>
-              </div>
-
-                <div class="project">
-                  <div class="project-img-container">
-                    <img src="images/project1.png" alt="An Animation" />
-                  </div>
-                  <h5>Project 4</h5>
-      
-                  <div class="project-tech">
-                    <p>HTML</p>
-                    <p>CSS</p>
-                  </div>
-
-                  <div class="project-links">
-                    <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-                    <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-                  </div>
-                </div>
+        <!-- About Section -->
       </section>
 
       <div class = "about-wrapper">
@@ -200,12 +204,10 @@
               <p>
               I am passionate about building responsive and 
               user-friendly web applications and am constantly seeking to expand my knowledge and stay up-to-date with the latest trends and technologies. 
-            </p><p>Thank you for considering my application.</p>
+            </p>
           </div>
         </div>
       </div>
-
-    </header>
 
   </body>
 </html>

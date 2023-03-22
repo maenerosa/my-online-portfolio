@@ -9,28 +9,27 @@
   height: 100vh;
 }
 .about-left {
-  background-color: #f583ff;
-  background-image: linear-gradient(19deg, #ff58de 0%, #77005f 100%);
+  background-image: linear-gradient(19deg, #fffbfb4c 0%, 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: #fff;
+  color: #000000;
 }
 .about-left-content > div {
-  background: #12192c80;
+  background: #ffffff80;
   padding: 4rem 4rem 2.5rem 5rem;
   text-align: center;
 
   border-radius: 12px 12px 0 0;
 }
 .about-left-content {
-  box-shadow: 0px 0px 18px -1px #12192c80;
-  -webkit-box-shadow: 0px 0px 18px -1px #12192c80;
-  -moz-box-shadow: 0px 0px 18px -1px #12192c80;
-  border-radius: 12px;
-  width: 80%;
+  box-shadow: 0px 0px 18px -1px #000000;
+  -webkit-box-shadow: 0px 0px 18px -1px #05050580;
+  -moz-box-shadow: 0px 0px 18px -1px #090909;
+  border-radius: 5px;
+  width: 90%;
 }
 .about-img img {
   display: block;
@@ -56,14 +55,16 @@
   margin: 2.2rem 0 0.6rem 0;
   line-height: 1.2;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #ff84f5;
+  border-bottom: 1px solid #ff00ea;
 }
+
 .about-left-content h3 {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 5px;
   margin-top: 1.2rem;
 }
+
 .icons {
   background: #12192c;
   display: flex;
@@ -71,9 +72,10 @@
   padding: 0.8rem 0;
   border-radius: 0 0 12px 12px;
 }
+
 .icons li {
   list-style-type: none;
-  background: #77005f;
+  background: #040404;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -91,7 +93,7 @@
   color: #12192c80;
 }
 .about-right {
-  background: #12192c;
+  background: #790061ad;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -148,12 +150,11 @@
   color: #fff;
 }
 .about-me p {
-  font-weight: 300;
   padding: 0.5rem;
-  opacity: 0.8;
+  font-weight: bolder;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .about-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
@@ -165,5 +166,12 @@
   .about-left-content {
     position: absolute;
     width: 80%;
+  }
+}
+
+@media (max-width: 601px) {
+  .about-right h2,
+  .about-right h3 {
+    display: none;
   }
 }
