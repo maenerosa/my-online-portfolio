@@ -499,6 +499,7 @@ main {
 }
 
 .hero-content {
+  margin-top: 200px;
   max-width: 450px;
 }
 
@@ -1169,7 +1170,6 @@ textarea.input-field {
 
   .hero-content {
     --color-primary: var(--white);
-
     position: absolute;
     top: 50%;
     filter: drop-shadow(2px 4px 10px var(--black));
