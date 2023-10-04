@@ -1,10 +1,23 @@
+/*-----------------------------------*\
+ * style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2022 codewithsadee
+ */
+
+/*-----------------------------------*\
+ * #CUSTOM PROPERTY
+\*-----------------------------------*/
+
 :root {
   /**
   * colors
   */
 
-  --raw-blue: hsl(199, 100%, 50%);
-  --blue: hsl(199, 100%, 50%);
+  --raw-seinna: hsl(180, 100%, 50%);
+  --sizzling-sunrise: hsl(194, 100%, 55%);
+  --scarlet: hsl(212, 96%, 47%);
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
@@ -17,7 +30,7 @@
   --ff-roboto: "Roboto", sans-serif;
 
   --fs-1: 2rem;
-  --fs-2: calc(1.13rem + 1vw);
+  --fs-2: calc(1.813rem + 1vw);
   --fs-3: calc(1.313rem + 1vw);
   --fs-4: 1.4rem;
   --fs-5: 1rem;
@@ -46,16 +59,17 @@
   --radius-4: 4px;
   --radius-12: 12px;
 }
-/**
-  * THEME COLORS
-  */
+
+/*-----------------------------------*\
+* #THEME COLORS
+\*-----------------------------------*/
 
 body.dark_theme {
-  --bg-primary: hsla(0, 0%, 0%, 0.952);
-  --bg-secondary: hsla(0, 0%, 0%, 0.952);
+  --bg-primary: hsl(0, 0%, 12%);
+  --bg-secondary: hsl(0, 0%, 19%);
   --color-primary: hsl(0, 0%, 100%);
   --color-secondary: hsl(0, 0%, 62%);
-  --card-shadow: hsla(0, 0%, 0%, 0.952);
+  --card-shadow: hsla(0, 0%, 0%, 0.4);
   --input-bg: hsl(0, 0%, 16%);
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
@@ -71,9 +85,10 @@ body.light_theme {
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
 }
-/**
-  * END 0F THEME COLORS
-  */
+
+/*-----------------------------------*\
+* #RESET
+\*-----------------------------------*/
 
 *,
 *::before,
@@ -81,10 +96,6 @@ body.light_theme {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-li {
-  list-style: none;
 }
 
 li {
@@ -155,9 +166,10 @@ body.active {
   overflow: hidden;
 }
 
-.container {
-  padding-inline: 10px;
-}
+/*-----------------------------------*\
+* #REUSED STYLE
+\*-----------------------------------*/
+
 .container {
   padding-inline: 10px;
 }
@@ -191,6 +203,7 @@ body.active {
 .w-100 {
   width: 100%;
 }
+
 .btn {
   max-width: max-content;
   color: var(--color-primary);
@@ -209,17 +222,17 @@ body.active {
 
 .btn-primary:is(:hover, :focus) {
   background: var(--color-primary);
-  color: var(--raw-blue);
+  color: var(--bg-primary);
 }
 
 .btn-secondary {
-  background: var(--raw-blue);
-  border-color: var(--raw-blue);
+  background: var(--raw-seinna);
+  border-color: var(--raw-seinna);
   color: var(--black);
 }
 
 .btn-secondary:is(:hover, :focus) {
-  --raw-blue: hsl(0, 0%, 100%);
+  --raw-seinna: hsl(24, 74%, 64%);
 }
 
 .section-subtitle {
@@ -269,7 +282,10 @@ body.active {
   z-index: 1;
 }
 
-/* HEADER SECTION*/
+/*-----------------------------------*\
+* #HEADER
+\*-----------------------------------*/
+
 .header {
   padding-block: 15px;
   position: fixed;
@@ -454,9 +470,9 @@ body.active {
   width: 100%;
 }
 
-/* END OF HEADER SECTION*/
-
-/* HERO SECTION*/
+/*-----------------------------------*\
+* #HERO
+\*-----------------------------------*/
 
 main {
   overflow-x: hidden;
@@ -475,7 +491,6 @@ main {
 .hero-banner {
   max-width: 500px;
   width: 125%;
-  margin-top: 40px;
   margin-bottom: 30px;
 }
 
@@ -496,9 +511,9 @@ main {
   margin-inline: auto;
 }
 
-/* END OF HERO SECTION*/
-
-/* STATS*/
+/*-----------------------------------*\
+* #STATS
+\*-----------------------------------*/
 
 .stats {
   padding-block: var(--section-padding);
@@ -556,9 +571,9 @@ main {
   color: var(--color-secondary);
 }
 
-/* END OF STATS*/
-
-/* ABOUT */
+/*-----------------------------------*\
+* #ABOUT
+\*-----------------------------------*/
 
 .about {
   padding-block: var(--section-padding);
@@ -579,9 +594,9 @@ main {
   margin-bottom: 10px;
 }
 
-/* END OF ABOUT*/
-
-/*SKILLS*/
+/*-----------------------------------*\
+* #SKILLS
+\*-----------------------------------*/
 
 .skills {
   padding-block: var(--section-padding);
@@ -674,9 +689,9 @@ main {
   opacity: 1;
 }
 
-/*END OF SKILLS*/
-
-/*PROJECTS*/
+/*-----------------------------------*\
+* #PROJECT
+\*-----------------------------------*/
 
 .project {
   padding-block: var(--section-padding);
@@ -750,9 +765,9 @@ main {
   margin-inline: auto;
 }
 
-/*END OF PROJECTS*/
-
-/*CONTACT*/
+/*-----------------------------------*\
+* #CONTACT
+\*-----------------------------------*/
 
 .contact {
   padding-block: var(--section-padding);
@@ -887,9 +902,9 @@ textarea.input-field {
   color: var(--bg-primary);
 }
 
-/*END OF CONTACT*/
-
-/*FOOTER*/
+/*-----------------------------------*\
+* #FOOTER
+\*-----------------------------------*/
 
 .footer {
   background: var(--bg-secondary);
@@ -912,9 +927,9 @@ textarea.input-field {
   color: var(--raw-seinna);
 }
 
-/*END OF FOOTER*/
-
-/*GO TO TOP */
+/*-----------------------------------*\
+* #GO TO TOP
+\*-----------------------------------*/
 
 .go-top {
   position: fixed;
@@ -941,9 +956,13 @@ textarea.input-field {
   transform: translateY(0);
 }
 
-/*END OF GO TO TOP */
+/*-----------------------------------*\
+* #MEDIA QUERIES
+\*-----------------------------------*/
 
-/*MEDIA QUERIES 550PX SCREEN*/
+/**
+* responsive for larger than 550px screen
+*/
 
 @media (min-width: 550px) {
   /**
@@ -960,7 +979,7 @@ textarea.input-field {
   }
 
   /**
-  * PROJECT SECTION
+  * PROJECT
   */
 
   .project-list {
@@ -973,7 +992,9 @@ textarea.input-field {
   }
 }
 
-/*MEDIA QUERIES 768PX SCREEN*/
+/**
+* responsive for larger than 768px screen
+*/
 
 @media (min-width: 768px) {
   /**
@@ -989,16 +1010,16 @@ textarea.input-field {
   }
 
   /**
-   * STATS
-   */
+  * STATS
+  */
 
   .stats-list {
     grid-template-columns: 1fr 1fr;
   }
 
   /**
-   * ABOUT
-   */
+  * ABOUT
+  */
 
   .btn-group {
     display: flex;
@@ -1016,8 +1037,8 @@ textarea.input-field {
   }
 
   /**
-   * CONTACT
-   */
+  * CONTACT
+  */
 
   .contact-form {
     max-width: 450px;
@@ -1025,7 +1046,9 @@ textarea.input-field {
   }
 }
 
-/*MEDIA QUERIES 992PX SCREEN*/
+/**
+* responsive for larger than 992px screen
+*/
 
 @media (min-width: 992px) {
   /**
@@ -1318,7 +1341,9 @@ textarea.input-field {
   }
 }
 
-/*MEDIA QUERIES 1200PX SCREEN*/
+/**
+* responsive for larger than 1200px screen
+*/
 
 @media (min-width: 1200px) {
   /**
