@@ -4,210 +4,776 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/projects.css" />
-    <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/skills.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="file/EllenMaeNerosa_CV.pdf">
-    <script
-      src="https://kit.fontawesome.com/7520d132f7.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="file/EllenMaeNerosa_CV.pdf" />
     <title>Ellen Mae Nerosa - Personal Portfolio</title>
   </head>
-  <body>
-    <header>
+  <body id="top" class="dark_theme">
+    <header class="header" data-header>
+      <div class="container">
+        <h1 class="h1 logo">
+          <a href="#">EMN<span>.</span></a>
+        </h1>
 
-      <!-- Navigation Bar Section -->
-      <nav>
-        <ul class="navbar">
-          <img src="images/mylogo.png" class="logo" />
-          <input type="checkbox" id="check">
-          <span class="menu"> 
-          <li><a href="#">ABOUT</a></li>
-             <li><a href="#">PROJECTS</a></li>
-             <li><a href="#">CONTACT</a></li>
-             <li><a href="#">RESUME</a></li>
-            <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
-          </span>  
-            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
-        </ul>
-      </nav>
-      
+        <div class="navbar-actions">
+          <select name="language" id="lang">
+            <option value="en">En</option>
+          </select>
+
+          <button
+            class="theme-btn"
+            aria-label="Change Theme"
+            title="Change Theme"
+            data-theme-btn
+          >
+            <span class="icon"></span>
+          </button>
+        </div>
+
+        <button
+          class="nav-toggle-btn"
+          aria-label="Toggle Menu"
+          title="Toggle Menu"
+          data-nav-toggle-btn
+        >
+          <span class="one"></span>
+          <span class="two"></span>
+          <span class="three"></span>
+        </button>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+            <li>
+              <a href="#home" class="navbar-link">Home.</a>
+            </li>
+
+            <li>
+              <a href="#about" class="navbar-link">About.</a>
+            </li>
+
+            <li>
+              <a href="#skills" class="navbar-link">Skills.</a>
+            </li>
+
+            <li>
+              <a href="#portfolio" class="navbar-link">Portfolio.</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link">Contact.</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- Introduction Section -->
 
-      <section class="info">
-        <div class="info-contents">
-          <h3>Hi, I'm <span>Ellen Mae Nerosa</span>.</h3>
-          <br />
-          <br />
-          <h1><span>W</span>EB <span>D</span>EVELOPER</h1>
-          <br />
+    <main>
+      <article class="container">
+        <!-- 
+        - #HERO
+      -->
 
-          <h3>
-            Web Developer and Designer from Philippines. <br />
+        <section class="hero" id="home">
+          <figure class="hero-banner">
+            <picture>
+              <source
+                src="images/hero-banner.png"
+                alt="A woman who owns this portfolio"
+                media="(min-width: 768px)"
+              />
+              <source
+                src="images/hero-banner-md.png"
+                alt="A woman who owns this portfolio"
+                media="(min-width: 500px)"
+              />
+              <img
+                src="images/hero-banner-sm.png"
+                alt="A woman who owns this portfolio"
+                class="w-100"
+              />
+            </picture>
+          </figure>
 
-            I specialize in creating high-quality, dynamic websites and web
-            applications that are both visually stunning and fully functional.
-          </h3>
-          <br />
-          <a href="#">Hire me</a>
-        </div>
+          <div class="hero-content">
+            <h2 class="h2 hero-title">
+              Web Developer and Designer from Philippines.
+            </h2>
 
-        <div class="img-container">
-          <img
-            src="images/myphoto2.png"
-            alt="an image of myself"
-            class="image"
-          />
-        </div>
-      </section>
-
-      <!-- Skills Section -->
-      <section class="skills">
-        <div class="skill">
-          <h3>HTML</h3>
-          <p>1 year</p>
-        </div>
-
-        <div class="skill">
-          <h3>CSS</h3>
-          <p>1 year</p>
-        </div>
-      </section>
-
-      <!-- Projects Section -->
-
-      <section class="projects">
-        <div class="projects-container">
-        <div class="projects-header">
-        <h1 class="project-title">RECENT<span> PROJECTS</span></h1>
-        </div>
-          <div class="all-projects">
-            
-            <div class="project-item">
-            <div class="project-info">
-            <h2>Project 1 - Text Animation</h2>
-            <p>HTML</p> <p>CSS</p>
-            <p>An animation text is a visually dynamic form of text 
-              that moves or changes in a creative and interesting way.</p>
-              <br>
-              </div>
-          <div class="project-image">
-            <img src="images/project1.png" alt="An Animation" />
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
           </div>
-          <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-          <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-        </div>
-        
 
-        <div class="project-item">
-          <div class="project-info">
-        <h2>Project 1 - Text Animation</h2>
-        <p>HTML</p> <p>CSS</p>
-        <p>An animation text is a visually dynamic form of text 
-          that moves or changes in a creative and interesting way.</p>
-          <br>
-          </div>
-      <div class="project-image">
-        <img src="images/project1.png" alt="An Animation" />
-      </div>
-      <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-      <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-    </div>
+          <ul class="hero-social-list">
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
 
+                <div class="tooltip">Facebook</div>
+              </a>
+            </li>
 
-    <div class="project-item">
-      <div class="project-info">
-    <h2>Project 1 - Text Animation</h2>
-    <p>HTML</p> <p>CSS</p>
-    <p>An animation text is a visually dynamic form of text 
-      that moves or changes in a creative and interesting way.</p>
-      <br>
-      </div>
-  <div class="project-image">
-    <img src="images/project1.png" alt="An Animation" />
-  </div>
-  <button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-  <button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-</div>
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
 
-<div class="project-item">
-  <div class="project-info">
-<h2>Project 1 - Text Animation</h2>
-<p>HTML</p> <p>CSS</p>
-<p>An animation text is a visually dynamic form of text 
-  that moves or changes in a creative and interesting way.</p>
-  <br>
-  </div>
-<div class="project-image">
-<img src="images/project1.png" alt="An Animation" />
-</div>
-<button type = "button" class = "btn btn-animationproject" onclick="location.href='https://maenerosa.github.io/project1-animation/'">View Project</button>
-<button type = "button" class = "btn btn-animationcode" onclick="location.href='https://github.com/maenerosa/project1-animation/blob/main/index.html'">View Code</button>
-</div>
+                <div class="tooltip">Twitter</div>
+              </a>
+            </li>
 
-        </div>
-        </div>
+            <li>
+              <a href="#" class="hero-social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
 
-        <!-- About Section -->
-      </section>
+                <div class="tooltip">Linkedin</div>
+              </a>
+            </li>
+          </ul>
 
-      <div class = "about-wrapper">
-        <div class = "about-left">
-          <div class = "about-left-content">
-            <div>
-              <div class = "shadow">
-                <div class = "about-img">
-                  <img src = "images/myphoto.png" alt = "about image">
+          <a href="#stats" class="scroll-down">Scroll</a>
+        </section>
+
+        <!-- 
+        - #STATS
+      -->
+
+        <section class="stats" id="stats">
+          <ul class="stats-list">
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img src="images/stats-card_icon-1.png" alt="Badge icon" />
                 </div>
-              </div>
-  
-              <h2>Ellen Mae Nerosa</h2>
-              <h3>Web developer</h3>
+
+                <h2 class="h2 card-title">
+                  12+ <strong>Years of Experience</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="images/stats-card_icon-2.png"
+                    alt="Checkmark icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  230+ <strong>Completed Projects</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="stats-card">
+                <div class="card-icon">
+                  <img
+                    src="images/stats-card_icon-3.png"
+                    alt="Peoples rating icon"
+                  />
+                </div>
+
+                <h2 class="h2 card-title">
+                  95+ <strong>Happy Clients</strong>
+                </h2>
+
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section class="about" id="about">
+          <figure class="about-banner">
+            <img
+              src="images/about-banner.png"
+              alt="A woman who owns this portfolio"
+              class="w-100"
+            />
+          </figure>
+
+          <div class="about-content section-content">
+            <p class="section-subtitle">About me</p>
+
+            <h2 class="h3 section-title">
+              Need a Creative Product? I can Help You!
+            </h2>
+
+            <p class="section-text">
+              I am a recent graduate of an intensive web development bootcamp,
+              where I gained extensive training in web development technologies
+              such as HTML, CSS, JavaScript, and React.
+
+              <br /><br />
+              Although I do not have direct industry experience as a web
+              developer, I am eager to apply my skills and knowledge to
+              contribute to a dynamic team and gain practical experience in the
+              field. During my bootcamp, I worked on several projects that
+              required collaboration and problem-solving, which has equipped me
+              with valuable communication and teamwork skills.
+              <br /><br />
+              I am passionate about building responsive and user-friendly web
+              applications and am constantly seeking to expand my knowledge and
+              stay up-to-date with the latest trends and technologies.
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-secondary">Hire me</button>
+
+              <button class="btn btn-primary">Download cv</button>
             </div>
-  
-            <ul class = "icons">
-              <li><i class = "fab fa-facebook-f"></i></li>
-              <li><i class = "fab fa-twitter"></i></li>
-              <li><i class = "fab fa-linkedin"></i></li>
-              <li><i class = "fab fa-instagram"></i></li>
+          </div>
+        </section>
+
+        <!-- 
+        - #SKILLS
+      -->
+
+        <section class="skills" id="skills">
+          <div class="skills-content section-content">
+            <p class="section-subtitle">My skills</p>
+
+            <h2 class="h3 section-title">
+              What My Programming Skills Included?
+            </h2>
+
+            <p class="section-text">
+              I develop simple, intuitive and responsive user interface that
+              helps users get things done with less effort and time with those
+              technologies.
+            </p>
+
+            <div class="skills-toggle" data-toggle-box>
+              <button class="toggle-btn active" data-toggle-btn>Skills</button>
+
+              <button class="toggle-btn" data-toggle-btn>Tools</button>
+            </div>
+          </div>
+
+          <div class="skills-box" data-skills-box>
+            <ul class="skills-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">HTML5</div>
+
+                  <div class="card-icon">
+                    <img src="images/html5.png" alt="HTML5 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">CSS3</div>
+
+                  <div class="card-icon">
+                    <img src="images/css3.png" alt="CSS3 logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">JavaScript</div>
+
+                  <div class="card-icon">
+                    <img src="images/javascript.png" alt="JavaScript logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Bootstrap</div>
+
+                  <div class="card-icon">
+                    <img src="images/bootstrap.png" alt="Bootstrap logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">React</div>
+
+                  <div class="card-icon">
+                    <img src="images/react.png" alt="React logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Firebase</div>
+
+                  <div class="card-icon">
+                    <img src="images/firebase.png" alt="Firebase logo" />
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="tools-list">
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Git</div>
+
+                  <div class="card-icon">
+                    <img src="images/git.png" alt="Git logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Npm</div>
+
+                  <div class="card-icon">
+                    <img src="images/npm.png" alt="Npm logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Command Line</div>
+
+                  <div class="card-icon">
+                    <img src="images/command.png" alt="Command Line logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">VS Code</div>
+
+                  <div class="card-icon">
+                    <img src="images/vs-code.png" alt="VS Code logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Slack</div>
+
+                  <div class="card-icon">
+                    <img src="images/slack.png" alt="Slack logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Photoshop</div>
+
+                  <div class="card-icon">
+                    <img src="images/photoshop.png" alt="Photoshop logo" />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="skill-card">
+                  <div class="tooltip">Adobe XD</div>
+
+                  <div class="card-icon">
+                    <img src="images/adobe-xd.png" alt="Adobe XD logo" />
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
-          
-        </div>
-  
-        <div class = "about-right">
-          <h2>You want to know about me <span>?</span></h2>
-          <h3>Here's who I am & what I do</h3>
-          <div class = "about-btns">
-            <button type = "button" class = "btn btn-resume" onclick="window.location.href='file/EllenMaeNerosa_CV.pdf'" download>Resume / CV</a> </button>
-            <button type = "button" class = "btn btn-github" onclick="location.href='https://github.com/maenerosa'">Git hub</button>
-          </div>
-  
-          <div class = "about-me">
-            <p>I am a recent graduate of a 4-month intensive web development bootcamp, where I gained extensive training in web development technologies such as HTML, CSS, JavaScript, and React. <br>
-            </p>
-              <p>Although I do not have direct industry experience as a web developer, I am eager to apply my skills and knowledge to contribute 
-              to a dynamic team and gain practical experience in the field. During my bootcamp, I worked on several projects that required collaboration 
-              and problem-solving, which has equipped me with valuable communication and teamwork skills.
-              </p>
-              <p>
-              I am passionate about building responsive and 
-              user-friendly web applications and am constantly seeking to expand my knowledge and stay up-to-date with the latest trends and technologies. 
-            </p>
-          </div>
-        </div>
-      </div>
+        </section>
 
+        <!-- 
+        - #PROJECTS
+      -->
+
+        <section class="project" id="portfolio">
+          <ul class="project-list">
+            <li>
+              <div class="project-content section-content">
+                <p class="section-subtitle">My Works</p>
+
+                <h2 class="h3 section-title">
+                  See My Works Which Will Amaze You!
+                </h2>
+
+                <p class="section-text">
+                  We develop the best quality website that serves for the
+                  long-term. Well-documented, clean, easy and elegant interface
+                  helps any non-technical clients.
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-1.png"
+                    class="w-100"
+                    alt="A macintosh on a yellow background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-2.png"
+                    class="w-100"
+                    alt="On a Blue background, a Wacom and a mouse."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-3.png"
+                    class="w-100"
+                    alt="A Cassette tape on a mellow apricot background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-4.png"
+                    class="w-100"
+                    alt="Blue digital watch on a dark liver background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-5.png"
+                    class="w-100"
+                    alt="On a dark liver background, Airport luggage car carrying a luggage."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-6.png"
+                    class="w-100"
+                    alt="On a yellow background, a digital watch and a glass."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="project-card">
+                <figure class="card-banner">
+                  <img
+                    src="images/project-7.png"
+                    class="w-100"
+                    alt="A fujifilm instant camera on a dark electric blue background."
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+
+                  <time class="publish-date" datetime="2022-04"
+                    >April 2022</time
+                  >
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <button class="load-more">Load more work</button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 
+        - #CONTACT
+      -->
+
+        <section class="contact" id="contact">
+          <div class="contact-content section-content">
+            <p class="section-subtitle">Contact</p>
+
+            <h2 class="h3 section-title">
+              Have You Any Project? Please Drop a Message
+            </h2>
+
+            <p class="section-text">
+              Get in touch and let me know how i can help. Fill out the form and
+              i’ll be in touch as soon as possible.
+            </p>
+
+            <ul class="contact-list">
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Address:</h3>
+
+                  <address class="contact-info">
+                    Imus City, Cavite, Philippines 4103
+                  </address>
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="call-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Phone:</h3>
+
+                  <a href="phone:+639506102901" class="contact-info"
+                    >(+63) 950 6102 901</a
+                  >
+                </div>
+              </li>
+
+              <li class="contact-list-item">
+                <div class="contact-item-icon">
+                  <ion-icon name="mail-outline"></ion-icon>
+                </div>
+
+                <div class="wrapper">
+                  <h3 class="h4 contact-item-title">Email:</h3>
+
+                  <a href="mailto:funj451@gmail.com" class="contact-info"
+                    >funj451@gmail.com</a
+                  >
+                </div>
+              </li>
+
+              <li>
+                <ul class="contac-social-list">
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Facebook</div>
+
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Twitter</div>
+
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="contact-social-link">
+                      <div class="tooltip">Linkedin</div>
+
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <form action="" class="contact-form">
+            <div class="form-wrapper">
+              <label for="name" class="form-label">Name</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required
+                  placeholder="e.g John Smith"
+                  class="input-field"
+                />
+
+                <ion-icon name="person-circle"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="email" class="form-label">Email</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  placeholder="e.g johsmith@git.com"
+                  class="input-field"
+                />
+
+                <ion-icon name="mail"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="phone" class="form-label">Phone</label>
+
+              <div class="input-wrapper">
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  required
+                  placeholder="Phone Number"
+                  class="input-field"
+                />
+
+                <ion-icon name="call"></ion-icon>
+              </div>
+            </div>
+
+            <div class="form-wrapper">
+              <label for="message" class="form-label">Message</label>
+
+              <div class="input-wrapper">
+                <textarea
+                  name="message"
+                  id="message"
+                  required
+                  placeholder="Write message..."
+                  class="input-field"
+                ></textarea>
+
+                <ion-icon name="chatbubbles"></ion-icon>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send</button>
+          </form>
+        </section>
+      </article>
+    </main>
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <p class="h1 logo">
+          <a href="#">EMN<span>.</span> </a>
+        </p>
+
+        <p class="copyright">
+          &copy; 2023 <a href="#">EllenMaeNerosa</a>. All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- 
+  - #GO TO TOP
+-->
+
+    <a href="#top" class="go-top" data-go-top title="Go to Top">
+      <ion-icon name="arrow-up"></ion-icon>
+    </a>
+
+    <!-- 
+  - custom js link
+-->
+    <script src="js/script.js"></script>
+
+    <!-- 
+  - ionicon link
+-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
